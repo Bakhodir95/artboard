@@ -1,4 +1,6 @@
+// import 'package:artboard/firstPage.dart';
 import 'package:artboard/firstPage.dart';
+import 'package:artboard/secondPage.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -8,6 +10,13 @@ void main(List<String> args) {
 class ArtBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/second": (context) => SecondPage(),
+        // "/third": (context) => ThirdPage(),
+        // "/first": (context) => FirstPage(),
+      },
+    );
   }
 }
