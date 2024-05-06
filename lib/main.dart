@@ -12,6 +12,9 @@ class ArtBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: FirstPage(),
+      ),
       routes: {
         "/second": (context) => SecondPage(),
         // "/third": (context) => ThirdPage(),

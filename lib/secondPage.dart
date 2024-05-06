@@ -1,5 +1,7 @@
 import 'package:artboard/firstPage.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
@@ -124,7 +126,7 @@ class SecondPage extends StatelessWidget {
                   "Monthly Preview",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
                 ),
-                Center(
+                Container(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -135,7 +137,7 @@ class SecondPage extends StatelessWidget {
                             padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
                             child: Container(
                                 width: 180,
-                                height: 150,
+                                height: 300,
                                 decoration: const BoxDecoration(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15)),
@@ -162,7 +164,7 @@ class SecondPage extends StatelessWidget {
                           ),
                           Container(
                               width: 180,
-                              height: 150,
+                              height: 120,
                               decoration: const BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15)),
@@ -194,7 +196,7 @@ class SecondPage extends StatelessWidget {
                             padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
                             child: Container(
                                 width: 180,
-                                height: 150,
+                                height: 120,
                                 decoration: const BoxDecoration(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15)),
@@ -221,7 +223,7 @@ class SecondPage extends StatelessWidget {
                           ),
                           Container(
                               width: 180,
-                              height: 150,
+                              height: 300,
                               decoration: const BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15)),
